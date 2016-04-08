@@ -1,16 +1,16 @@
-﻿namespace ClearUserData
+﻿namespace ReLogin
 {
     partial class Form1
     {
         /// <summary>
-        /// 必需的设计器变量。
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 清理所有正在使用的资源。
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,7 +20,12 @@
             base.Dispose(disposing);
         }
 
-        #region Windows 窗体设计器生成的代码
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
 
         /// <summary>
         /// 设计器支持所需的方法 - 不要修改
@@ -36,12 +41,11 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(177, 61);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(131, 41);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "继续";
+            this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -49,10 +53,9 @@
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(285, 61);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(212, 41);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 29);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
@@ -62,32 +65,30 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Location = new System.Drawing.Point(16, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(369, 29);
+            this.label1.Size = new System.Drawing.Size(275, 23);
             this.label1.TabIndex = 2;
-            this.label1.Text = "将关闭客户端并清除本地数据，是否继续？";
+            this.label1.Text = "退出当前用户并重新登录？";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(399, 95);
+            this.ClientSize = new System.Drawing.Size(299, 76);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(417, 142);
-            this.MinimumSize = new System.Drawing.Size(417, 142);
+            this.MaximumSize = new System.Drawing.Size(317, 123);
+            this.MinimumSize = new System.Drawing.Size(317, 123);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "清除用户数据";
+            this.Text = "重新登录";
             this.ResumeLayout(false);
 
         }
@@ -99,4 +100,3 @@
         private System.Windows.Forms.Label label1;
     }
 }
-
